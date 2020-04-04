@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhiệt độ</title>
+</head>
+<body>
+<script>
+    let a;
+    do {
+       a = parseInt(prompt("Nhập nhiệt độ"));
+
+     if (a < 20){
+         alert("Tăng nhiệt độ");
+     }
+     if (a > 100){
+         alert("Giảm nhiệt độ");
+     }
+    } while ( a < 20 || a > 100 );
+    document.write("Nhiệt độ cân bằng" + a);
+
+
+</script>
+
+</body>
+</html>
