@@ -5,8 +5,20 @@
     <title>Fibonacci</title>
 </head>
 <body>
+<!-- Hiển thị ra 20 số trong dãy fibonacci đầu tiên -->
+<!-- số đằng sau bằng tổng 2 số phía trước -->
 <script>
-
+    let a = 0;
+    let b = 1;
+    let count = 0;
+    let total;
+    while (count < 20){
+        total = b + a;
+        document.write( a + "<br>");
+        a = b;
+        b = total;
+        count++;
+    }
 </script>
 </body>
 </html>
