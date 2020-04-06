@@ -2,25 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tính tổng của 20 số đầu tiên trong dãy fibonacci</title>
+    <title> Tính tổng của 20 số đầu tiên trong dãy fibonacci</title>
 </head>
-    <body>
-    <!-- Tính tổng của 20 số đầu tiên trong dãy fibonacci-->
-        <script>
-            let a = 0;
-            let b = 1;
-            let total;
-            let count = 0;
-            let sum = 0;
-                while (count < 20){
-                    total = a + b;
-                    sum = sum + a;
-                    a = b;
-                    b = total;
-                    count++;
-                }
-            document.write("Tổng 20 số đầu tiên là:" + sum);
-        </script>
+<!-- Tính tổng của 20 số đầu tiên trong dãy fibonacci-->
+<body>
+    <script>
+        let a = 0;
+        let b = 1;
+        let total;
+        let sum = 0;
+        for (count = 0;count<20; count++) {
+            total = a + b ;
+            sum = sum + a ;
+            a = b ;
+            b = total;
 
-    </body>
+        }
+        document.write("tổng của 20 số đầu tiên là :" + sum)
+
+    </script>
+</body>
 </html>

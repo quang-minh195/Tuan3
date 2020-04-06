@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Số tự nhiên</title>
+    <title>Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên</title>
 </head>
-<body>
 <!--Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên-->
+<body>
     <script>
         let sum = 0;
-        for (i=7; i <= 7*30; i+=7){
-            sum= sum + i;
+        let count =  0;
+        for (i = 7; count <=30; i=i+7) {
+            sum = sum + i;
+            count++;
         }
-         document.write("tổng 30 số tự nhiên đầu tiên chia hết cho 7 là :"+sum);
-
+        document.write("Tồng 30 số đầu tiên chia hết cho 7 là : "+ sum);
     </script>
-
 </body>
 </html>

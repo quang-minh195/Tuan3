@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <title>Nhiệt độ</title>
 </head>
+<!--Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập.
+Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ.
+Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.-->
 <body>
-<!==Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập.
-Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.-->
-<script>
-    let a;
-    do {
-       a = parseInt(prompt("Nhập nhiệt độ"));
+    <script>
+        let a;
+        do {
+            a = parseInt(prompt("Nhập nhiệt độ:"));
+            if (a > 100) {
+            alert("Giảm nhiệt độ");
+        }
+            if (a < 20) {
+                alert("Tăng nhiệt độ");
+            }
+        }
+        while (a > 100 || a < 20);
+        document.write("Nhiệt độ sau khi cân bằng:" + a);
 
-     if (a < 20){
-         alert("Tăng nhiệt độ");
-     }
-     if (a > 100){
-         alert("Giảm nhiệt độ");
-     }
-    } while ( a < 20 || a > 100 );
-    document.write("Nhiệt độ cân bằng" + a);
-
-
-</script>
-
+    </script>
 </body>
 </html>

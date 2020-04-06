@@ -2,26 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fibonacci</title>
+    <title>20 số Fibonnaci</title>
 </head>
+<!-- Hiển thị ra 20 số trong dãy fibonacci đầu tiên. -->
 <body>
-<!-- Hiển thị ra 20 số trong dãy fibonacci đầu tiên -->
-<!-- số đằng sau bằng tổng 2 số phía trước -->
-<script>
-    let a = 0;
-    let b = 1;
-    let count = 0;
-    let total;
-    while (count < 20){
-        count++;
-        total = b + a;
-        //số tiếp theo bằng tổng2 số trc
-        document.write( a + "<br>");
-        a = b;
-
-        b = total;
-
-    }
-</script>
+    <script>
+        let a = 0;
+        let b = 1;
+        document.write(a +"<br>");
+        document.write(b + "<br>");
+        let total;
+        for (count = 0; count < 20; count++){
+            let total = a + b;
+            document.write(total + "<br>");
+            a = b;
+            b = total
+        }
+    </script>
 </body>
 </html>

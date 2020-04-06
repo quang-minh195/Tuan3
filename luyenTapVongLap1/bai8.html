@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<!-- Nâng cấp game "Hãy thử đoán xem!"
+
+1. Thiết kế giao diện: Giao diện chỉ gồm 1 Button "Chơi": cho phép người dùng bắt đầu  chơi hoặc chơi lại  
+
+2. Mô tả ứng dụng: Khi người dùng nhấn vào button “Chơi”:
+
+Ứng dụng hiển thị cửa sổ prompt cho phép người dùng nhập vào muốn đoán trong khoảng nào
+Ứng dụng chọn ra số ngẫu nhiên trong khoảng mà ngườI dùng chọn  
+Ứng dụng hiển thị cửa số prompt cho người dùng nhập giá trị mà người dùng đoán  
+Ứng dụng lấy kết quả và so sánh với giá trị ngẫu nhiên.
+Nếu bằng thì hiển thị thông báo chúc mừng và kết thúc lượt chơi  
+Nếu lớn hơn hoặc bé thua thì hiển thị thông báo lớn hơn hay bé thua và cho phép người dùng lựa chọn lại.
+Chú ý: Người dùng chỉ được lựa chọn tối đa ba lần-->
+<body>
+<button onclick="run();">Chơi</button>
+    <script>
+        function run(){
+            alert("Nhập vào số muốn đoán trong khoảng [a] [b] ");
+            let a = parseInt(prompt("Nhập số a: "));
+            let b = parseInt(prompt("Nhập số b: "));
+
+            let c = Math.floor(Math.random() * (b - a + 1) ) + a;
+
+            let d = parseInt(prompt("Nhập sô ngau  nhien: "));
+            while(true) {
+                if (d === c) {
+                    alert("OK")
+                    break;
+                }
+                else if (d > c) {
+                    d = parseInt(prompt(" So be hon: "))
+
+                } else {
+                        d = parseInt(prompt("So lon hon: "))
+                    }
+                }
+            }
+
+
+    </script>
+</body>
+</html>

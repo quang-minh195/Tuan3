@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy Finonaci</title>
+</head>
+<body>
+<!--In dãy Finonaci-->
+    <script>
+       let a = 0;
+       let b = 1;
+       document.write(a + "<br>");
+       document.write(b + "<br>");
+       // in ra 2 số đã gán
+       let total;
+       let count=0;
+       while (count<50){
+           total = a + b;
+           // tổng số sau bằng 2 số trước
+           document.write(total + "<br>");
+           // in ra tổng
+           count++;
+           // vòng lặp tăng thêm 1 lần
+           a = b;
+           //tăng giá trị lên theo mỗi vòng lặp
+           b = total;
+           // b bằng tổng của a +b qua bước trên
+       }
+    </script>
+
+</body>
+</html>
