@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác vuông</title>
+</head>
+<body>
+<script>
+    for (i =1; i <= 5; i ++){
+        for (j = 1; j <=i; j++){
+            document.write("*");
+        }
+        document.write("<br>");
+        }
+</script>
+<br>
+<script>
+    for ( i = 1 ; i<= 5 ; i++) {
+        // i =1 thêm 1 dấu cách và chạy vòng lặp trong
+       document.write("");
+        for (j =0; j <=5- i; j++){
+            // j tăng lên 1 thì thêm 1 sao
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+</script>
+<br>
+<script>
+       for (i =0 ; i <= 5 ; i++){
+           for (j= 0 ; j<5-i; j++) {
+               document.write("&ensp;");
+           }
+           for (k = 0; k< i ; k++){
+               document.write("*");
+           }
+           document.write("<br>")
+       }
+</script>
+<br>
+<script>
+    for (i = 0 ; i< 5; i++) {
+        for (j = 0; j <i; j++) {
+            document.write("&ensp;");
+        }
+        for (r = 0; r <5-i; r++) {
+                document.write("*");
+            }
+        document.write('<br>');
+    }
+
+</script>
+
+
+
+</body>
+</html>
