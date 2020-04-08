@@ -8,7 +8,7 @@
     body {padding-top:50px}
 </style>
 <body>
-
+    <h1>Basic input</h1>
     <input type="text" id="txtvalue">
     <input type="button" value="Add" id="btnAdd" onclick="add_element_to_array();" >
     <input type="button" value="Display" id="btnDisplay" onclick="display_array();">
@@ -23,6 +23,10 @@
             x++;
             document.getElementById("txtvalue").value = "";
         }
+            /*Lấy giá trị từ input-text và gán phần tử ở vị trí x trong mảng mỗi lần hàm add_element_to_array() được gọi
+               Tăng giá trị x lên 1
+               Hiển thị phần tử vừa được thêm vào mảng
+               Gán giá trị rỗng cho input-text */
         function display_array() {
             let e = "<hr/>";
             for (let i = 0; i < array.length; i++){
@@ -30,6 +34,10 @@
             }
             document.getElementById("result").innerHTML = e;
             }
+            /* Tạo biến e để lưu thẻ <hr> mỗi lần hiển thị một phần tử thẻ <hr> sử dụng để phân cách các phần tử trong mảng
+                Dùng vòng lặp for duyệt toàn bộ mảng: for (var i=0; i<array.length; i++)
+                Mỗi lần duyệt lấy giá trị của các phần tử cộng dồn vào biến e. Thêm thẻ <br/> cuối mỗi lần duyệt.
+                Kết thúc lặp. Hiển thị biến e */
 
 </script>
 </html>

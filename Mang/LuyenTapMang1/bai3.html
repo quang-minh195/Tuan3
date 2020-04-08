@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên, giá trị trung bình</title>
+</head>
+<body>
+<!-- Viết chương trình khởi tạo mảng số nguyên.
+ Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng..-->
+<script>
+    let array = [-12,34,53,23,41,-15,-43,24,54];
+    let max = array[0];
+    let tbc;
+    let tong=0;
+        for (let i = 0 ; i < array.length ; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+            tong += array[i];
+        }
+        tbc = tong / array.length;
+        document.write("Max"+ max + "TBC"+ tbc);
+
+</script>
+</body>
+</html>
