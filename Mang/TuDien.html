@@ -7,8 +7,7 @@
 <body>
 <div>
     <h1>Từ Điển Anh-Việt</h1>
-    <input type="search" id="nhap">
-    <input type="submit" value="Translate" onclick="trans()">
+
     <span id="result"></span>
 </div>
 <script>
@@ -17,26 +16,25 @@
         ["tree", "desk", "laptop", "door", "teacher"],
     ];
     let vie = [
-        ["xin chào", "tạm biệt","ăn","uống","chaạy","khóc","cười"],
+        ["xin chào", "tạm biệt","ăn","uống","chạy","khóc","cười"],
         ["cây", "bàn","máy tính","cửa","giáo viên"],
 
     ];
-    let output;
 
-    function trans() {
-        let input = document.getElementById("nhap").value;
-        for (let i = 0; i < eng.length; i++) {
+        let input = prompt(" Nhập từ cần tra");
+        loop: for (let i = 0; i < eng.length; i++) {
             for (let j = 0; j < eng[i].length; j++){
                 if (input === eng[i][j]) {
                     output = vie[i][j];
-                    break;
+                    break loop;
                 }else {
                     output = "Not found";
+
                 }
             }
         }
-        document.getElementById("result").innerHTML = output;
-    }
+        document.getElementById("result").innerHTML = (input + "&ensp;"+"nghĩa là" + "&ensp;" +output) ;
+
 </script>
 </body>
 </html>

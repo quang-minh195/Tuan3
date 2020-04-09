@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Đếm số ký tự số</title>
 </head>
 <body>
-$END$
+<!--Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng.-->
+<script>
+    let a = ["a",2,"q",4,"v","r","i",5,5,5,11,12,13,14];
+    let count = 0;
+        for (i = 0; i < a.length;i++) {
+            if (typeof(a[i]) == 'number' ) {
+                count++;
+                console.log(count);
+            }
+        }
+        document.write("Số ký tự số là" +":" + count);
+
+
+</script>
 </body>
 </html>

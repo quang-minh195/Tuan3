@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic tac toe</title>
+</head>
+<body>
+<h2> Cờ Caro</h2>
+<p id="tictactoe"></p>
+<button onclick="showTictactoe()">Open Game</button>
+<script>
+    let tictactoe = [
+        [".",".",".",".","."],
+        [".",".",".",".","."],
+        [".",".",".",".","."],
+        [".",".",".",".","."],
+        [".",".",".",".","."],
+        ];
+    function showTictactoe(){
+        let data="";
+        for (let i=0; i<5; i++){
+            data+= "<br/>";
+            for (let j=0; j<5; j++){
+                data+= tictactoe[i][j] +"&ensp;";
+            }
+        }
+        data+= "<button onclick=\"changeValue()\">Thay đổi</button>";
+        document.getElementById("tictactoe").innerHTML= data;
+    }
+    let flag= true;
+    function changeValue() {
+        let x = Number(prompt("Nhập x"));
+        let y = Number(prompt("Nhập y"));
+            if (flag) {
+                tictactoe[x][y] = "X";
+            }else
+                tictactoe[x][y] = "O";
+                showTictactoe();
+                flag =!flag;
+
+    }
+    let checkwin;
+</script>
+</body>
+</html>

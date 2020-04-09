@@ -6,30 +6,34 @@
 </head>
 <body>
 <div style="text-align: center">
-    <h2>Type anthing slowly</h2>
-    <form>
-        <textarea id="type" name="txt" cols="30" rows="10" onkeydown="typeText()"></textarea>
-    </form>
+<form>
+    <h1>Type Anything slowly</h1>
+    <textarea id="quang1" name="test"  onkeydown="demo();" style="width: 500px;height: 100px;font-size: 25px"></textarea>
+</form>
 </div>
 <script>
-    let a =["K","H","Ô","N","G"," ","Đ","Ư","Ợ","C"," ","N","H","Ậ","P"];
-    let n= "";
-    function typeText() {
-        let t = document.getElementById("type").value;
+    let a = ["K","H","Ô","N","G"," ","Đ","Ư","Ợ"
+        ,"C"," ","N","H","Ậ"
+        ,"P","!","!"];
+    let n ="" ;
+    function demo() {
+        let t = document.getElementById("quang1").value;
         let j = t.length;
-        if (j > 0) {
-            for (let i =0; i <j; i++) {
+        if(j > 0)
+        {
+            for(let i=0; i<j; i++)
+            {
                 n = n + a[i];
-                if (i == 16)
+                if(i == a.length)
                 {
-                    document.getElementById("type").value = "";
+                    document.getElementById("quang1").value = "";
                     n = "";
                 }
             }
         }
-        document.getElementById("type").value = n;
-        n= "";
-        setTimeout("typeText()",1);
+        document.getElementById("quang1").value = n;
+        n="";
+        setTimeout("demo()", 1);
     }
 </script>
 
