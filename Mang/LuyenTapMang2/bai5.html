@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra chuỗi</title>
+</head>
+<body>
+<!-- Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không. -->
+<script>
+    let a = prompt("Nhập chuỗi a:");
+    let b = prompt(" Nhập chuỗi b:");
+    let count = 0;
+        for ( let i = 0; i< a.length; i++){
+            if (b.indexOf(a[i]) != -1) {
+                count++;
+            }
+        }
+        if (count == a.length && count == b.length) {
+            document.write("Hai chuỗi giống nhau!");
+        } else {
+            document.write("Hai chuỗi không giống nhau");
+        }
+</script>
+</body>
+</html>
